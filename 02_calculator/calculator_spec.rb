@@ -76,17 +76,22 @@ end
 # Extra Credit Test-Driving Bonus:
 # once the above tests pass,
 # write tests and code for the following:
+describe "multiply" do
 
-describe "#multiply" do
+  it "multiplies two numbers" do
+    expect(multiply(3,5)).to eq(15)
+  end
 
-  it "multiplies two numbers"
-
-  it "multiplies several numbers"
-  
+  it "multiplies several numbers" do
+    expect(multiply(3,5,8,2)).to eq(240)  
+  end
 end
 
-describe "#power" do
-  it "raises one number to the power of another number"
+
+describe "power" do
+  it "raises one number to the power of another number" do
+  expect(power(2,3)).to eq(33)
+end
 end
 
 # http://en.wikipedia.org/wiki/Factorial
