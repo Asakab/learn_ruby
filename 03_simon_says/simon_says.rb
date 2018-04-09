@@ -19,8 +19,17 @@ def first_word(hello)
 	hello.split(" ")[0]
 end
 
-def titleize(jaws)
-	a = jaws.split(" ")
-	a[0].capitalize!
-	
+def titleize(word)
+    array=["the","and","over"]
+    
+    a2=word.split(" ")
+    a2.each {|word|
+
+    if array.include?(word) && a2[0] != word
+        word
+    else
+        word.capitalize!
+    end    
+    }
+    return a2.join(" ")
 end

@@ -3,6 +3,6 @@ def ftoc(temp)
 end
 
  def ctof(temp2) 
- 	(temp2 * 9 / 5)  + 32
+ 	(temp2 * 9.0 / 5)  + 32
 
  end

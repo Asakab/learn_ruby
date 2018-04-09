@@ -14,6 +14,7 @@ def translate(apple)
 		apple[0] = ""
 		apple << "ay"
 	
+	
 end
 end
 end
